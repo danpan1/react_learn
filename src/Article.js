@@ -32,17 +32,6 @@ export default class Article extends Component {
         )
     }
 
-    toggleOpen = ev => {
-        this.setState({
-                isOpen: !this.state.isOpen
-            })
-            /*
-
-                    this.setState({
-                        opened: {...this.state.opened, a: false}
-                    })
-            */
-    }
 }
 
 
