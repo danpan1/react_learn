@@ -5,7 +5,12 @@ import toggleOpen from './decorators/toggleOpen'
 class CommentList extends Component {
 
     static propTypes = {
-        comments: PropTypes.array // Not required because No comments Alert
+        // Comments data array . Not required because No comments Alert
+        comments: PropTypes.array, 
+        // open/close state for comment
+        isOpen:PropTypes.bool.isRequired,
+        // toggler func for change state
+        toggleOpen: PropTypes.func.isRequired
     }
 
     componentWillMount() {
