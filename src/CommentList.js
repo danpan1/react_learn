@@ -5,7 +5,7 @@ import toggleOpen from './decorators/toggleOpen'
 class CommentList extends Component {
 
     static propTypes = {
-        comments: PropTypes.array
+        comments: PropTypes.array // Not required because No comments Alert
     }
 
     componentWillMount() {
